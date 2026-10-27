@@ -5,7 +5,7 @@ Practise technical interviews with an AI interviewer that reads your resume from
 Built as **7 Express microservices + a React frontend**, all on free tiers: Vercel (hosting), Neon (Postgres + pgvector) and Groq (LLMs, Whisper, Prompt Guard).
 
 # DEPLOYED LIVE LINK
-[Click Here](!https://frontend-nine-ecru-6j45hz9ns2.vercel.app/)
+[Click Here](https://frontend-nine-ecru-6j45hz9ns2.vercel.app/)
 
 ## Repository
 
