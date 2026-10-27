@@ -1,0 +1,49 @@
+{
+  "name": "resume-service",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Google Drive resume validation, parsing, profile extraction and RAG index",
+  "type": "module",
+  "engines": {
+    "node": "24.x"
+  },
+  "main": "src/app.js",
+  "scripts": {
+    "dev": "node --watch --env-file=.env src/dev.js",
+    "start": "node --env-file=.env src/dev.js",
+    "test": "vitest run",
+    "lint": "eslint .",
+    "format": "prettier --write src test",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "node --env-file=.env src/db/migrate.js"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "1.2.0",
+    "drizzle-orm": "0.45.4",
+    "express": "5.3.0",
+    "groq-sdk": "1.6.0",
+    "helmet": "8.3.0",
+    "mammoth": "1.13.0",
+    "undici": "8.12.3",
+    "unpdf": "1.9.1",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.5.11",
+    "@electric-sql/pglite-pgvector": "0.0.12",
+    "@eslint/js": "10.0.1",
+    "@huggingface/transformers": "4.3.1",
+    "drizzle-kit": "0.31.11",
+    "eslint": "10.13.0",
+    "globals": "17.13.0",
+    "prettier": "3.9.10",
+    "supertest": "7.3.1",
+    "vite": "8.3.5",
+    "vitest": "5.0.5"
+  },
+  "overrides": {
+    "@esbuild-kit/core-utils": {
+      "esbuild": "0.25.12"
+    }
+  }
+}
